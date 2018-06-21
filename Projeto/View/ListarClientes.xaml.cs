@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,18 @@ namespace View
         public ListarClientes()
         {
             InitializeComponent();
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ControllerCliente controllerCliente = new ControllerCliente();
+            dgCliente.ItemsSource = controllerCliente.ListTodosClientes();
+        }
+
+        private void dgCliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid dg = ((DataGrid)sender);
+
+          Cliente cli = (Cliente)dg.Items[dg.SelectedIndex];
         }
     }
 }

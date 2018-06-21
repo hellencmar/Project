@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="ListarClientes" Height="300" Width="300">
+        Title="ListarClientes" Height="307" Width="489" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="193*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dgCliente" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="249" Width="589" SelectionChanged="dgCliente_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False" Grid.ColumnSpan="2" />
+
+
     </Grid>
 </Window>
