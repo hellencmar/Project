@@ -9,7 +9,7 @@ namespace Models
         public int ClienteID { get; set; }
         [Required, MaxLength(11)]
         public string CPF { get; set; }
-        public string Email { get; set; }3        
+        public string Email { get; set; }        
 
     }
 }
