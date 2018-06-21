@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Cadastrar Usuario" HorizontalAlignment="Left" Margin="316,176,0,0" VerticalAlignment="Top" Width="119" Click="btnCadastrarCliente_Click" RenderTransformOrigin="0.381,0.879"/>
+        <Button Content="Cadastrar Cliente" HorizontalAlignment="Left" Margin="316,176,0,0" VerticalAlignment="Top" Width="119" Click="btnCadastrarCliente_Click" RenderTransformOrigin="0.381,0.879"/>
+        <Button x:Name="button" Content="Listar Clientes" HorizontalAlignment="Left" Margin="316,201,0,0" VerticalAlignment="Top" Width="119" FontFamily="Segoe UI Historic" Click="btnListarCliente_Click"/>
 
     </Grid>
 </Window>

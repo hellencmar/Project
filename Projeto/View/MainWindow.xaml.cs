@@ -31,6 +31,10 @@ namespace View
             cadUsu.ShowDialog();
         }
 
-
+        private void btnListarCliente_Click(object sender, RoutedEventArgs e)
+        {
+            ListarClientes listCli = new ListarClientes();
+            listCli.ShowDialog();
+        }
     }
 }

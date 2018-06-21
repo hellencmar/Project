@@ -38,13 +38,13 @@ namespace View
                 cliente.Email = txtEmail.Text;
 
                 ControllerCliente controllerCliente = new ControllerCliente();
-                controllerCliente.AlterCliente(cliente);
+                controllerCliente.CadastrarCliente(cliente);
 
-                MessageBox.Show("Usuário salvo com sucesso!");
+                MessageBox.Show("Cliente salvo com sucesso");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao salvar o usuário (" + ex.Message + ")");
+                MessageBox.Show("Erro ao salvar Cliente (" + ex.Message + ")");
             }
         }
     }
