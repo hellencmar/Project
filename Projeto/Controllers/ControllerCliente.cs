@@ -22,11 +22,11 @@ namespace Controllers
         }
         public List<Cliente> ListTodosClientes()
         {
-            return contexto.Cliente.ToList();
+            return contexto.Cliente.Where(c => c.CodCli==1).ToList();
         }
         public List<Cliente> ListClientesAtivos()
         {
-            return contexto.Cliente.Where(c => c.Status == true).ToList();
+            return contexto.Cliente.Where(c => c.Status == true && c.CodCli==1).ToList();
         }
         public void Excluir(int id)
         {
