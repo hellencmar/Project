@@ -21,15 +21,15 @@ namespace Controllers
         }
         public List<Funcionario> ListTodosFuncionario()
         {
-            return contexto.Funcionario.ToList();
+            return contexto.Funcionario.Where(f => f.CodFun==2).ToList();
         }
         public List<Funcionario> ListFuncionariosAtivos()
         {
-            return contexto.Funcionario.Where(c => c.Status == true).ToList();
+            return contexto.Funcionario.Where(f => f.Status == true && f.CodFun==2).ToList();
         }
         public List<Funcionario> ListarPorFuncao(string funcao)
         {
-            return contexto.Funcionario.Where(f => f.Funcao.ToLower() == funcao.ToLower()).ToList();
+            return contexto.Funcionario.Where(f => f.Funcao.ToLower() == funcao.ToLower() && f.CodFun==2).ToList();
         }
         public void Excluir(int id)
         {

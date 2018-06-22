@@ -12,7 +12,7 @@ namespace Models
         [MaxLength(100)]
         public string Email { get; set; }
         public int CodCli { get; private set; }
-        public void SetCodCli()
+        private void SetCodCli()
         {
             CodCli = 1;
         }

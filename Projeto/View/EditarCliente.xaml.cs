@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for EditarCliente.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EditarCliente : Window
     {
-        public MainWindow()
+        public EditarCliente()
         {
             InitializeComponent();
-        }
-
-        private void btnEspacoCli(object sender, RoutedEventArgs e)
-        {
-            ClienteMenu cliMenu = new ClienteMenu();
-            cliMenu.Show();
         }
     }
 }

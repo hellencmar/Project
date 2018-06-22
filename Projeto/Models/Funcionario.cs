@@ -8,7 +8,7 @@ namespace Models
         //public int FuncionarioID { get; set; }
         public string Funcao { get; set; }
         public int CodFun { get; private set; }
-        public void SetCodFun()
+        private void SetCodFun()
         {
             CodFun = 2;
         }
