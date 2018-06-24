@@ -10,7 +10,7 @@
 
         <Button x:Name="CadastrarCli" Content="Cadastrar Cliente" HorizontalAlignment="Left" Margin="170,84,0,0" VerticalAlignment="Top" Width="118" Click="btnCadastrarCliente_Click" RenderTransformOrigin="0.381,0.879"/>
         <Button x:Name="ListarCli" Content="Listar Clientes" HorizontalAlignment="Left" Margin="170,109,0,0" VerticalAlignment="Top" Width="119" FontFamily="Segoe UI Historic" Click="btnListarCliente_Click"/>
-        <Button x:Name="EditarCli" Content="Gerenciar Clientes" HorizontalAlignment="Left" Margin="170,134,0,0" VerticalAlignment="Top" Width="119" Click="btnEditarCli_Click"/>        
+        <Button x:Name="GerenciarCli" Content="Gerenciar Clientes" HorizontalAlignment="Left" Margin="170,134,0,0" VerticalAlignment="Top" Width="119" Click="btnGerenciarCli_Click"/>        
         <Grid Height="409" VerticalAlignment="Top" Margin="10,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="72*"/>
