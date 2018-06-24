@@ -19,12 +19,12 @@ namespace View
     /// <summary>
     /// Interaction logic for EditarCliente.xaml
     /// </summary>
-    public partial class EditarCliente : Window
+    public partial class GerenciarCliente : Window
     {
         Cliente cliente = new Cliente();
         ControllerCliente controllerCliente = new ControllerCliente();
 
-        public EditarCliente()
+        public GerenciarCliente()
         {
             InitializeComponent();
         }

@@ -69,11 +69,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditarCliente.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ExcluirCliente.xaml">
+    <Page Include="GerenciarCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -95,11 +91,8 @@
     <Compile Include="ClienteMenu.xaml.cs">
       <DependentUpon>ClienteMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditarCliente.xaml.cs">
-      <DependentUpon>EditarCliente.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ExcluirCliente.xaml.cs">
-      <DependentUpon>ExcluirCliente.xaml</DependentUpon>
+    <Compile Include="GerenciarCliente.xaml.cs">
+      <DependentUpon>GerenciarCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarClientes.xaml.cs">
       <DependentUpon>ListarClientes.xaml</DependentUpon>

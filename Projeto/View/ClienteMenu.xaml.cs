@@ -35,18 +35,13 @@ namespace View
             listCli.ShowDialog();
         }
 
-        private void btnEditarCli_Click(object sender, RoutedEventArgs e)
+        private void btnGerenciarCli_Click(object sender, RoutedEventArgs e)
         {
-            EditarCliente editarCli = new EditarCliente();
-            editarCli.ShowDialog();
+            GerenciarCliente gerenciarCli = new GerenciarCliente();
+            gerenciarCli.ShowDialog();
 
         }
 
-        private void btnExcluirCli_Click(object sender, RoutedEventArgs e)
-        {
-            ExcluirCliente excluirCli = new ExcluirCliente();
-            excluirCli.ShowDialog();
-
-        }
+        
     }
 }
