@@ -15,6 +15,10 @@ namespace Controllers
             contexto.Cliente.Add(entity);
             contexto.SaveChanges();
         }
+        public Cliente BuscarClientePorID(int id)
+        {
+            return contexto.Cliente.Find(id);
+        }
         public void AlterCliente(Cliente entity)
         {
             contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;

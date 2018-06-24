@@ -7,19 +7,22 @@
         mc:Ignorable="d"
         Title="EditarCliente" Height="450" Width="800">
     <Grid>
-
+        <TextBlock HorizontalAlignment="Left" Margin="5,10,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" RenderTransformOrigin="-0.425,0.281"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="79,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="16" Width="33"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="64,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="79,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" Text="CPF" VerticalAlignment="Top" Height="21" Width="33"/>
-        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="64,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.497,1.57"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,107,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" RenderTransformOrigin="0.625,3.633"/>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="64,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,158,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="64,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        
-        <DataGrid x:Name="dgDadosCliente" HorizontalAlignment="Left" Margin="64,221,0,0" VerticalAlignment="Top" Height="188" Width="484" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosCliente_MouseDoubleClick" SelectionMode="Single" Loaded="Window_Loaded" />
-        <Button Content="Editar" HorizontalAlignment="Left" Margin="28,196,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-3.104,0.169"/>
-        <Button Content="Excluir" HorizontalAlignment="Left" Margin="124,196,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="22" Margin="79,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" RenderTransformOrigin="0.625,3.633"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="79,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,128,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" RenderTransformOrigin="0.571,-1.062"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="79,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <DataGrid x:Name="dgDadosCliente" HorizontalAlignment="Left" Margin="185,208,0,0" VerticalAlignment="Top" Height="188" Width="361" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosCliente_MouseDoubleClick" SelectionMode="Single" Loaded="Window_Loaded" />
+        <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="22,166,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btn_Editar"/>
+        <Button x:Name="btnExcluir" Content="Excluir Cliente" HorizontalAlignment="Left" Margin="144,166,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btn_Excluir"/>
+
+
 
     </Grid>
 </Window>
