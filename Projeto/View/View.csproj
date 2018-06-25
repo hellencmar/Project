@@ -67,7 +67,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CadastroFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ClienteMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FuncionarioMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,8 +98,14 @@
     <Compile Include="CadastroCliente.xaml.cs">
       <DependentUpon>CadastroCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CadastroFuncionario.xaml.cs">
+      <DependentUpon>CadastroFuncionario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ClienteMenu.xaml.cs">
       <DependentUpon>ClienteMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FuncionarioMenu.xaml.cs">
+      <DependentUpon>FuncionarioMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="GerenciarCliente.xaml.cs">
       <DependentUpon>GerenciarCliente.xaml</DependentUpon>
