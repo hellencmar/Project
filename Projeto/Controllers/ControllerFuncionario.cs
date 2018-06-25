@@ -9,8 +9,7 @@ namespace Controllers
     {
         private Contexto contexto = new Contexto();
         public void CadastrarFuncionario(Funcionario entity)
-        {
-            entity.Status = true;
+        { 
             contexto.Funcionarios.Add(entity);
             contexto.SaveChanges();
         }
@@ -22,10 +21,6 @@ namespace Controllers
         public List<Funcionario> ListTodosFuncionario()
         {
             return contexto.Funcionarios.ToList();
-        }
-        public List<Funcionario> ListFuncionariosAtivos()
-        {
-            return contexto.Funcionarios.Where(f => f.Status == true).ToList();
         }
         public List<Funcionario> ListarPorFuncao(string funcao)
         {

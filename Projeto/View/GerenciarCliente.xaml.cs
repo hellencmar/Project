@@ -1,18 +1,8 @@
 ﻿using Controllers;
 using Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace View
 {
@@ -36,7 +26,7 @@ namespace View
 
         private void dgDadosCliente_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {            
-                if (dgDadosCliente.SelectedIndex > 0)
+                if (dgDadosCliente.SelectedIndex >= 0)
                 {
                     cliente = (Cliente)dgDadosCliente.SelectedItem;
                     txtID.Text = (Convert.ToString(cliente.ClienteID)); //perguntar para o professor
@@ -53,10 +43,10 @@ namespace View
             try
             {
               
-                cliente = controllerCliente.BuscarClientePorID(Convert.ToInt32(txtID));
-                cliente.Nome = txtNome.Text;
-                cliente.CPF = txtCPF.Text;
-                cliente.Email = txtEmail.Text;
+                cliente = controllerCliente.BuscarClientePorID(Convert.ToInt32(txtID.Text));
+                cliente.Nome     = txtNome.Text;
+                cliente.CPF      = txtCPF.Text;
+                cliente.Email    = txtEmail.Text;
                 cliente.Telefone = txtTelefone.Text;
                 controllerCliente.AlterCliente(cliente);
 
@@ -76,9 +66,10 @@ namespace View
         {
             try
             {
-                cliente = controllerCliente.BuscarClientePorID(Convert.ToInt32(txtID));
+                cliente = controllerCliente.BuscarClientePorID(Convert.ToInt32(txtID.Text));
                 if (cliente != null)
-                controllerCliente.Excluir((Convert.ToInt32(txtID)));
+                controllerCliente.Excluir((Convert.ToInt32(txtID.Text)));
+                MessageBox.Show("Cliente excluido com sucesso!");
 
             }
             catch (Exception ex)

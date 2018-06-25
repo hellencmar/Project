@@ -10,8 +10,7 @@ namespace Controllers
         private Contexto contexto = new Contexto();
 
         public void CadastrarCliente(Cliente entity)
-        {
-            entity.Status = true;
+        {            
             contexto.Clientes.Add(entity);
             contexto.SaveChanges();
         }
@@ -27,11 +26,7 @@ namespace Controllers
         public List<Cliente> ListTodosClientes()
         {
             return contexto.Clientes.ToList();
-        }
-        public List<Cliente> ListClientesAtivos()
-        {
-            return contexto.Clientes.Where(c => c.Status == true).ToList();
-        }
+        }        
         public void Excluir(int id)
         {
             Cliente c = contexto.Clientes.Find(id);
