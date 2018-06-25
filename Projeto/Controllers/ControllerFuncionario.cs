@@ -11,7 +11,7 @@ namespace Controllers
         public void CadastrarFuncionario(Funcionario entity)
         {
             entity.Status = true;
-            contexto.Funcionario.Add(entity);
+            contexto.Funcionarios.Add(entity);
             contexto.SaveChanges();
         }
         public void AlterFuncionario(Funcionario entity)
@@ -21,23 +21,23 @@ namespace Controllers
         }
         public List<Funcionario> ListTodosFuncionario()
         {
-            return contexto.Funcionario.Where(f => f.CodFun==2).ToList();
+            return contexto.Funcionarios.ToList();
         }
         public List<Funcionario> ListFuncionariosAtivos()
         {
-            return contexto.Funcionario.Where(f => f.Status == true && f.CodFun==2).ToList();
+            return contexto.Funcionarios.Where(f => f.Status == true).ToList();
         }
         public List<Funcionario> ListarPorFuncao(string funcao)
         {
-            return contexto.Funcionario.Where(f => f.Funcao.ToLower() == funcao.ToLower() && f.CodFun==2).ToList();
+            return contexto.Funcionarios.Where(f => f.Funcao.ToLower() == funcao.ToLower()).ToList();
         }
         public void Excluir(int id)
         {
-            Funcionario f = contexto.Funcionario.Find(id);
+            Funcionario f = contexto.Funcionarios.Find(id);
 
             if (f != null)
             {
-                contexto.Funcionario.Remove(f);
+                contexto.Funcionarios.Remove(f);
                 contexto.SaveChanges();
             }
         }

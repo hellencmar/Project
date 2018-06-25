@@ -18,7 +18,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,128,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" RenderTransformOrigin="0.571,-1.062"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="79,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
-        <DataGrid x:Name="dgDadosCliente" HorizontalAlignment="Left" Margin="185,208,0,0" VerticalAlignment="Top" Height="188" Width="361" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosCliente_MouseDoubleClick" SelectionMode="Single" Loaded="Window_Loaded" />
+        <DataGrid x:Name="dgDadosCliente" HorizontalAlignment="Left" Margin="185,208,0,0" VerticalAlignment="Top" Height="188" Width="361" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosCliente_MouseDoubleClick" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" />
         <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="22,166,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btn_Editar"/>
         <Button x:Name="btnExcluir" Content="Excluir Cliente" HorizontalAlignment="Left" Margin="144,166,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btn_Excluir"/>
 

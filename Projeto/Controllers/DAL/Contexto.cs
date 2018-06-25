@@ -10,10 +10,10 @@ namespace Controllers.DAL
 
         }
 
-        public DbSet<Pessoa> Pessoa { get; set; }
+        //public DbSet<Pessoa> Pessoa { get; set; }
 
-        public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
-        public DbSet<Funcionario> Funcionario { get; set; }
+        public DbSet<Funcionario> Funcionarios { get; set; }
     }
 }

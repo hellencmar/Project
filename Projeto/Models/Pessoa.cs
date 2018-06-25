@@ -4,8 +4,8 @@ namespace Models
 {
     public abstract class Pessoa
     {
-        [Key]
-        public int PessoaID { get; set; }
+        //[Key]
+        //public int PessoaID { get; set; }
         [Required, MaxLength(50)]
         public string Nome { get; set; }
         [Required, MaxLength(10)]

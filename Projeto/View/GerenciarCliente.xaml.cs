@@ -39,7 +39,7 @@ namespace View
                 if (dgDadosCliente.SelectedIndex > 0)
                 {
                     cliente = (Cliente)dgDadosCliente.SelectedItem;
-                    txtID.Text = (Convert.ToString(cliente.PessoaID)); //perguntar para o professor
+                    txtID.Text = (Convert.ToString(cliente.ClienteID)); //perguntar para o professor
                     txtNome.Text = cliente.Nome;
                     txtCPF.Text = cliente.CPF;
                     txtEmail.Text = cliente.Email;

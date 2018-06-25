@@ -12,12 +12,12 @@ namespace Controllers
         public void CadastrarCliente(Cliente entity)
         {
             entity.Status = true;
-            contexto.Cliente.Add(entity);
+            contexto.Clientes.Add(entity);
             contexto.SaveChanges();
         }
         public Cliente BuscarClientePorID(int id)
         {
-            return contexto.Cliente.Find(id);
+            return contexto.Clientes.Find(id);
         }
         public void AlterCliente(Cliente entity)
         {
@@ -26,19 +26,19 @@ namespace Controllers
         }
         public List<Cliente> ListTodosClientes()
         {
-            return contexto.Cliente.Where(c => c.CodCli==1).ToList();
+            return contexto.Clientes.ToList();
         }
         public List<Cliente> ListClientesAtivos()
         {
-            return contexto.Cliente.Where(c => c.Status == true && c.CodCli==1).ToList();
+            return contexto.Clientes.Where(c => c.Status == true).ToList();
         }
         public void Excluir(int id)
         {
-            Cliente c = contexto.Cliente.Find(id);
+            Cliente c = contexto.Clientes.Find(id);
 
             if (c != null)
             {
-                contexto.Cliente.Remove(c);
+                contexto.Clientes.Remove(c);
                 contexto.SaveChanges();
             }
         }
