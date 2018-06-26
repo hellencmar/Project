@@ -15,5 +15,7 @@ namespace Controllers.DAL
         public DbSet<Cliente> Clientes { get; set; }
 
         public DbSet<Funcionario> Funcionarios { get; set; }
+
+        public DbSet<Agenda> Agendas { get; set; }
     }
 }
