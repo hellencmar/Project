@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Controllers;
+using Models;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace View
 {
@@ -27,21 +18,21 @@ namespace View
         {
             try
             {
-                Cliente cliente = new Cliente();
+                Funcionario funcionario = new Funcionario();
 
-                cliente.Nome = txtNome.Text;
-                cliente.CPF = txtCPF.Text;
-                cliente.Telefone = txtCPF.Text;
-                cliente.Email = txtEmail.Text;
+                funcionario.Nome = txtNome.Text;
+                funcionario.Funcao = txtFuncao.Text;
+                funcionario.Telefone = txtTelefone.Text;        
 
-                ControllerCliente controllerCliente = new ControllerCliente();
-                controllerCliente.CadastrarCliente(cliente);
+                ControllerFuncionario controllerFuncionario = new ControllerFuncionario();
+                controllerFuncionario.CadastrarFuncionario(funcionario);
 
-                MessageBox.Show("Cliente salvo com sucesso");
+                MessageBox.Show("Funcionario salvo com sucesso");
+                this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao salvar Cliente (" + ex.Message + ")");
+                MessageBox.Show("Erro ao salvar funcionario (" + ex.Message + ")");
             }
         }
     }

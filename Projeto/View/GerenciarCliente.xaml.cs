@@ -19,8 +19,7 @@ namespace View
             InitializeComponent();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            ControllerCliente controllerCliente = new ControllerCliente();
+        {          
             dgDadosCliente.ItemsSource = controllerCliente.ListTodosClientes();
         }
 
@@ -51,6 +50,7 @@ namespace View
                 controllerCliente.AlterCliente(cliente);
 
                 MessageBox.Show("Cliente alterado com sucesso!! ");
+                dgDadosCliente.Items.Refresh();
 
 
             }
@@ -70,6 +70,7 @@ namespace View
                 if (cliente != null)
                 controllerCliente.Excluir((Convert.ToInt32(txtID.Text)));
                 MessageBox.Show("Cliente excluido com sucesso!");
+                dgDadosCliente.Items.Refresh();
 
             }
             catch (Exception ex)

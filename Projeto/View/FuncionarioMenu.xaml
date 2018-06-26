@@ -8,8 +8,8 @@
         Title="FuncionarioMenu" Height="292.105" Width="506.391">
     <Grid>
         <Button x:Name="CadastrarFuncionario" Content="Cadastrar Funcionario" HorizontalAlignment="Left" Margin="58,55,0,0" VerticalAlignment="Top" Width="148" Click="btnCadastrarFunc"/>
-        <Button x:Name="ListarTodosFuncionarios" Content="Listar Todos Funcionarios" HorizontalAlignment="Left" Margin="58,80,0,0" VerticalAlignment="Top" Width="148"/>
-        <Button x:Name="ListarPorFuncao" Content="Listar por função" HorizontalAlignment="Left" Margin="58,105,0,0" VerticalAlignment="Top" Width="148"/>
+        <Button x:Name="ListarTodosFuncionarios" Content="Listar Todos Funcionarios" HorizontalAlignment="Left" Margin="58,80,0,0" VerticalAlignment="Top" Width="148" Click="btnListarFuncionarios"/>
+        <Button x:Name="ListarPorFuncao" Content="Listar por função" HorizontalAlignment="Left" Margin="58,105,0,0" VerticalAlignment="Top" Width="148" Click="btListarPorFuncao"/>
         <Grid HorizontalAlignment="Left" Height="253" Margin="10,6,0,0" VerticalAlignment="Top" Width="272">
             <Grid.RowDefinitions>
                 <RowDefinition Height="34*"/>
@@ -19,7 +19,7 @@
                 <ColumnDefinition Width="39*"/>
                 <ColumnDefinition Width="233*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="GerenciarFuncionarios" Content="Gerenciar Funcionarios" Grid.Column="1" HorizontalAlignment="Left" Margin="10,89,0,0" Grid.Row="1" VerticalAlignment="Top" Width="146"/>
+            <Button x:Name="GerenciarFuncionarios" Content="Gerenciar Funcionarios" Grid.Column="1" HorizontalAlignment="Left" Margin="10,89,0,0" Grid.Row="1" VerticalAlignment="Top" Width="146" Click="btnGerenciarFuncionarios"/>
         </Grid>
 
     </Grid>

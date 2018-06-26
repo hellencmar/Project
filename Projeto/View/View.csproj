@@ -83,7 +83,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GerenciarFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ListarClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListarFuncionarioPorFuncao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListarFuncionarios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,8 +122,17 @@
     <Compile Include="GerenciarCliente.xaml.cs">
       <DependentUpon>GerenciarCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GerenciarFuncionario.xaml.cs">
+      <DependentUpon>GerenciarFuncionario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListarClientes.xaml.cs">
       <DependentUpon>ListarClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarFuncionarioPorFuncao.xaml.cs">
+      <DependentUpon>ListarFuncionarioPorFuncao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarFuncionarios.xaml.cs">
+      <DependentUpon>ListarFuncionarios.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

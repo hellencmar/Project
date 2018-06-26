@@ -18,7 +18,11 @@ namespace Controllers
             contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;
             contexto.SaveChanges();
         }
-        public List<Funcionario> ListTodosFuncionario()
+        public Funcionario BuscarFuncionarioPorID(int id)
+        {
+            return contexto.Funcionarios.Find(id);
+        }
+        public List<Funcionario> ListTodosFuncionarios()
         {
             return contexto.Funcionarios.ToList();
         }

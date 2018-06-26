@@ -29,5 +29,23 @@ namespace View
             CadastroFuncionario cadastroFuncionario = new CadastroFuncionario();
             cadastroFuncionario.ShowDialog();
         }
+
+        private void btnListarFuncionarios(object sender, RoutedEventArgs e)
+        {
+            ListarFuncionarios listarFuncionarios = new ListarFuncionarios();
+            listarFuncionarios.ShowDialog();
+        }
+
+        private void btListarPorFuncao(object sender, RoutedEventArgs e)
+        {
+            ListarFuncionarioPorFuncao listFuncao = new ListarFuncionarioPorFuncao();
+            listFuncao.ShowDialog();
+        }
+
+        private void btnGerenciarFuncionarios(object sender, RoutedEventArgs e)
+        {
+            GerenciarFuncionario gerenciarFuncionario = new GerenciarFuncionario();
+            gerenciarFuncionario.ShowDialog();
+        }
     }
 }

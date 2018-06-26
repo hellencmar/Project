@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="EspacoCli" Content="Espaço Cliente" HorizontalAlignment="Left" Margin="50,82,0,0" VerticalAlignment="Top" Width="147" Click="btnEspacoCli"/>
+        <Button x:Name="EspacoFun" Content="Espaço Funcionario" HorizontalAlignment="Left" Margin="50,107,0,0" VerticalAlignment="Top" Width="147" Click="btnEspacoFun"/>
 
 
     </Grid>

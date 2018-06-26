@@ -28,7 +28,13 @@ namespace View
         private void btnEspacoCli(object sender, RoutedEventArgs e)
         {
             ClienteMenu cliMenu = new ClienteMenu();
-            cliMenu.Show();
+            cliMenu.ShowDialog();
+        }
+
+        private void btnEspacoFun(object sender, RoutedEventArgs e)
+        {
+            FuncionarioMenu funMenu = new FuncionarioMenu();
+            funMenu.ShowDialog();
         }
     }
 }
