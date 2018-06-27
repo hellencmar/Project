@@ -36,5 +36,13 @@ namespace View
             FuncionarioMenu funMenu = new FuncionarioMenu();
             funMenu.ShowDialog();
         }
+
+        private void btn_Agendar(object sender, RoutedEventArgs e)
+        {
+            AgendarHorario agendar = new AgendarHorario();
+            agendar.ShowDialog();
+
+            
+        }
     }
 }
