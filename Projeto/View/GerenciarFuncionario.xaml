@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="GerenciarFuncionario" Height="436.975" Width="657.983" Loaded="Window_Loaded">
-    <Grid Margin="0,0,-79,-113">
+    <Grid Margin="0,0,30,30">
         <TextBlock HorizontalAlignment="Left" Margin="5,10,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" RenderTransformOrigin="-0.425,0.281"/>
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="79,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="16" Width="33"/>
