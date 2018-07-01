@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControllerAnotacoes.cs" />
+    <Compile Include="ControllerAnotacao.cs" />
     <Compile Include="ControllerCliente.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="ControllerFuncionario.cs" />

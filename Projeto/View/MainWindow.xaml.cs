@@ -23,7 +23,10 @@ namespace View
             FuncionarioMenu funMenu = new FuncionarioMenu();
             funMenu.ShowDialog();
         }
-
-        
+        private void btnAnotacao(object sender, RoutedEventArgs e)
+        {
+            CriarAnotacao criarAnotacao = new CriarAnotacao();
+            criarAnotacao.ShowDialog();
+        }
     }
 }

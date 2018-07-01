@@ -75,6 +75,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CriarAnotacao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FuncionarioMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,6 +119,9 @@
     </Compile>
     <Compile Include="ClienteMenu.xaml.cs">
       <DependentUpon>ClienteMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CriarAnotacao.xaml.cs">
+      <DependentUpon>CriarAnotacao.xaml</DependentUpon>
     </Compile>
     <Compile Include="FuncionarioMenu.xaml.cs">
       <DependentUpon>FuncionarioMenu.xaml</DependentUpon>

@@ -8,7 +8,7 @@ namespace Controllers
    public class ControllerAnotacao
     {
         Contexto contexto = new Contexto();
-        public void CadastrarCliente(Anotacao entity)
+        public void CadastrarAnotacao(Anotacao entity)
         {
             contexto.AnotacoesCont.Add(entity);
             contexto.SaveChanges();
