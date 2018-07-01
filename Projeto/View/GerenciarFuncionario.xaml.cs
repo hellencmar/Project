@@ -30,7 +30,7 @@ namespace View
             {
                 funcionario = (Funcionario)dgDadosFuncionario.SelectedItem;
                 txtID.Text = (Convert.ToString(funcionario.FuncionarioID)); 
-                txtNome.Text =funcionario.Nome;
+                txtNome.Text = funcionario.Nome;
                 txtFuncao.Text = funcionario.Funcao;
                 txtTelefone.Text = funcionario.Telefone;  
 

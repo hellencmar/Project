@@ -12,7 +12,7 @@ namespace Models
         [Key]
         public int AnotacaoID { get; set; }
         [Required]
-        public string Titulo { get; set; }
+        public string Assunto { get; set; }
         [Required]
         public string Descricao { get; set; }
         public DateTime DataAnotacao { get; set; }

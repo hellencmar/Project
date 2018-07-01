@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using Controllers;
+using Models;
+using System.Data;
+using System.Windows;
 
 namespace View
 {
@@ -10,7 +13,9 @@ namespace View
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+        Anotacao anotacao = new Anotacao();
 
         private void btnEspacoCli(object sender, RoutedEventArgs e)
         {
@@ -27,6 +32,27 @@ namespace View
         {
             CriarAnotacao criarAnotacao = new CriarAnotacao();
             criarAnotacao.ShowDialog();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+            ControllerAnotacao controlleAnotação = new ControllerAnotacao();
+            dgAnotacao.ItemsSource = controlleAnotação.ListAnotacoes();           
+        }
+
+        private void dgAnotacao_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (dgAnotacao.SelectedIndex >= 0)
+            {
+
+                //var rowView = dgAnotacao.SelectedItems[0] as DataRowView;
+                //string ID = rowView["AnotacaoID"].ToString(); //textbox idMarca
+                //CriarAnotacao criarAnotacao = new CriarAnotacao();
+                //criarAnotacao.ShowDialog(ID);
+
+            }
+           
         }
     }
 }

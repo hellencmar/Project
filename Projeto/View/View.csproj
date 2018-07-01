@@ -91,6 +91,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ListarAnotacaoCompleta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ListarClientes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -131,6 +135,9 @@
     </Compile>
     <Compile Include="GerenciarFuncionario.xaml.cs">
       <DependentUpon>GerenciarFuncionario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarAnotacaoCompleta.xaml.cs">
+      <DependentUpon>ListarAnotacaoCompleta.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarClientes.xaml.cs">
       <DependentUpon>ListarClientes.xaml</DependentUpon>

@@ -41,13 +41,14 @@ namespace View
             {
                 dateTime = DateTime.Now;
                 Anotacao anotacao = new Anotacao();
-                anotacao.Titulo = txtTitulo.Text;
+                anotacao.Assunto = txtTitulo.Text;
                 anotacao.Descricao = txtDescricao.Text;
                 anotacao.DataAnotacao = dateTime;
                 controllerAnotacao.CadastrarAnotacao(anotacao);
 
                 MessageBox.Show("Anotação salva com sucesso");
                 this.Close();
+
             }
             catch (Exception ex)
             {
