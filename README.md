@@ -4,10 +4,10 @@
 
 <b>Descrição</b>
 
-Neste projeto será desenvolvido um gerenciador para um salão de beleza.
+Neste projeto será desenvolvido um software para gerenciar funcionarios e clientes.
 
 <b>Funcionalidades</b>
 
-- Cadastrar e listar funcionarios
-- Cadastrar, editar, excluir e listar clientes
-- Marcar e remarcar horarios
+
+- Cadastrar, editar, excluir e listar clientes/funcionarios
+- Espaço para lembretes/recados
