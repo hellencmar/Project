@@ -30,5 +30,10 @@ namespace View
             ControllerFuncionario controllerFuncionario = new ControllerFuncionario();
             dgFuncionarios.ItemsSource = controllerFuncionario.ListarPorFuncao(Convert.ToString(txtFuncao.Text));
         }
+
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

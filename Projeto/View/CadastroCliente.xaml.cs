@@ -41,6 +41,7 @@ namespace View
                 controllerCliente.CadastrarCliente(cliente);
 
                 MessageBox.Show("Cliente salvo com sucesso");
+                this.Close();
             }
             catch (Exception ex)
             {

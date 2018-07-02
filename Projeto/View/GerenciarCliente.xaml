@@ -5,25 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="EditarCliente" Height="450" Width="800">
+        Title="EditarCliente" Height="463.5" Width="1008.5">
     <Window.Background>
         <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
     </Window.Background>
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="5,10,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" RenderTransformOrigin="-0.425,0.281"/>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="79,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="16" Width="33"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="79,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" Text="CPF" VerticalAlignment="Top" Height="21" Width="33"/>
-        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="22" Margin="79,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" RenderTransformOrigin="0.625,3.633"/>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="79,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,128,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" RenderTransformOrigin="0.571,-1.062"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="79,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="397*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="63,35,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" RenderTransformOrigin="-0.425,0.281" Grid.RowSpan="3"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="126,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" IsEnabled="False" RenderTransformOrigin="1.183,1.065" Grid.RowSpan="3"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="63,48,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="16" Width="33" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="126,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="63,90,0,0" TextWrapping="Wrap" Text="CPF" VerticalAlignment="Top" Height="21" Width="33" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="22" Margin="126,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,137,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" RenderTransformOrigin="0.625,3.633" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="126,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,200,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" RenderTransformOrigin="0.571,-1.062" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="126,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Grid.Row="1" Grid.RowSpan="2"/>
 
-        <DataGrid x:Name="dgDadosCliente" HorizontalAlignment="Left" Margin="185,208,0,0" VerticalAlignment="Top" Height="188" Width="361" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosCliente_MouseDoubleClick" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" />
-        <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="22,166,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btn_Editar"/>
-        <Button x:Name="btnExcluir" Content="Excluir Cliente" HorizontalAlignment="Left" Margin="144,166,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btn_Excluir"/>
+        <DataGrid x:Name="dgDadosCliente" HorizontalAlignment="Left" Margin="515,16,0,0" VerticalAlignment="Top" Height="188" Width="403" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosCliente_MouseDoubleClick" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" Grid.Row="1" Grid.RowSpan="2" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Path= Nome}" Width="100"/>
+                <DataGridTextColumn Header="CPF" Binding="{Binding Path= CPF}" Width="100"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Path= Email}" Width="100"/>
+                <DataGridTextColumn Header="Telefone" Binding="{Binding Path= Telefone}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="95,266,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btn_Editar" Grid.Row="1" Grid.RowSpan="2"/>
+        <Button x:Name="btnExcluir" Content="Excluir Cliente" HorizontalAlignment="Left" Margin="236,266,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btn_Excluir" Grid.Row="1" Grid.RowSpan="2"/>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="406,266,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Click="btnVoltar_Click"/>
 
 
 

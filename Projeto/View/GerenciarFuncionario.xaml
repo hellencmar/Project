@@ -19,9 +19,17 @@
         <TextBlock HorizontalAlignment="Left" Margin="38,225,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" RenderTransformOrigin="0.625,3.633"/>
         <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="133,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
 
-        <DataGrid x:Name="dgDadosFuncionario" HorizontalAlignment="Left" Margin="489,53,0,0" VerticalAlignment="Top" Height="188" Width="361" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosFuncionario_MouseDoubleClick" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" />
+        <DataGrid x:Name="dgDadosFuncionario" HorizontalAlignment="Left" Margin="489,53,0,0" VerticalAlignment="Top" Height="188" Width="361" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosFuncionario_MouseDoubleClick" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Path= Nome}" Width="100"/>
+                <DataGridTextColumn Header="Função" Binding="{Binding Path= Funcao}" Width="150"/>               
+                <DataGridTextColumn Header="Telefone" Binding="{Binding Path= Telefone}" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
         <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="79,314,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btn_Editar"/>
-        <Button x:Name="btnExcluir" Content="Excluir Funcionario" HorizontalAlignment="Left" Margin="239,314,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btn_Excluir"/>
+        <Button x:Name="btnExcluir" Content="Excluir Funcionario" HorizontalAlignment="Left" Margin="209,314,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btn_Excluir"/>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="375,314,0,0" VerticalAlignment="Top" Width="120" Height="18" Click="btnVoltar_Click"/>
 
     </Grid>
 </Window>

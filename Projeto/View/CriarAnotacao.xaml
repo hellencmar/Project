@@ -5,27 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="CriarAnotacao" Height="450" Width="800">
+        Title="CriarAnotacao" Height="463.5" Width="1008.5">
     <Window.Background>
         <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
     </Window.Background>
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+        <Grid HorizontalAlignment="Left" Height="413" Margin="10,10,0,0" VerticalAlignment="Top" Width="980">
             <Grid.RowDefinitions>
-                <RowDefinition Height="29*"/>
-                <RowDefinition Height="370*"/>
+                <RowDefinition Height="34*"/>
+                <RowDefinition Height="365*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="16*"/>
                 <ColumnDefinition Width="177*"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="txtDataHora" Grid.Column="1" HorizontalAlignment="Left" Height="21" Margin="517,339,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Loaded="Form_Loaded" IsEnabled="False"/>
-            <TextBlock x:Name="Tiluto" Grid.Column="1" HorizontalAlignment="Left" Margin="10,31,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Título" VerticalAlignment="Top" Height="24" Width="96" FontSize="20"/>
-            <TextBox x:Name="txtTitulo" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,60,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="269"/>
-            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,88,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top" FontSize="20"/>
-            <TextBox x:Name="txtDescricao" Grid.Column="1" HorizontalAlignment="Left" Height="186" Margin="10,120,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="497"/>
-            <Button x:Name="btn_Salvar" Content="Salvar" Grid.Column="1" HorizontalAlignment="Left" Margin="10,340,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnSalvar"/>
-            <Button x:Name="btnCancelar" Content="Cancelar" Grid.Column="1" HorizontalAlignment="Left" Margin="108,340,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
+            <TextBox x:Name="txtDataHora" Grid.Column="1" HorizontalAlignment="Left" Height="21" Margin="578,339,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Loaded="Form_Loaded" IsEnabled="False"/>
+            <TextBlock x:Name="Tiluto" Grid.Column="1" HorizontalAlignment="Left" Margin="46,31,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Título" VerticalAlignment="Top" Height="24" Width="96" FontSize="20"/>
+            <TextBox x:Name="txtTitulo" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="46,60,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="269"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="46,88,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top" FontSize="20" Height="27" Width="85"/>
+            <TextBox x:Name="txtDescricao" Grid.Column="1" HorizontalAlignment="Left" Height="186" Margin="46,120,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="497"/>
+            <Button x:Name="btn_Salvar" Content="Salvar" Grid.Column="1" HorizontalAlignment="Left" Margin="56,340,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnSalvar" Height="20"/>
+            <Button x:Name="btnCancelar" Content="Cancelar" Grid.Column="1" HorizontalAlignment="Left" Margin="162,340,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click" Height="20"/>
         </Grid>
     </Grid>
 </Window>

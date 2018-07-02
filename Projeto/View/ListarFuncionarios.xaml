@@ -5,12 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="ListarFuncionarios" Height="314.286" Width="580.672" Loaded="Window_Loaded">
+        Title="ListarFuncionarios" Height="463.5" Width="1008.5" Loaded="Window_Loaded">
     <Window.Background>
         <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
     </Window.Background>
     <Grid>
-        <DataGrid x:Name="dgFuncionarios" HorizontalAlignment="Left" Margin="133,32,0,0" VerticalAlignment="Top" Height="205" Width="256" SelectionChanged="dgFuncionarios_SelectionChanged"/>
+        <DataGrid x:Name="dgFuncionarios" HorizontalAlignment="Left" Margin="253,104,0,0" VerticalAlignment="Top" Height="268" Width="457" SelectionChanged="dgFuncionarios_SelectionChanged" FontFamily="Verdana" AutoGenerateColumns="False"  IsReadOnly="True" RowDetailsVisibilityMode="Collapsed">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Path= Nome}" Width="150"/>
+                <DataGridTextColumn Header="Funcao" Binding="{Binding Path= Funcao}" Width="150"/>                
+                <DataGridTextColumn Header="Telefone" Binding="{Binding Path= Telefone}" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="434,390,0,0" VerticalAlignment="Top" Width="76" Click="btnVoltar_Click"/>
 
     </Grid>
 </Window>

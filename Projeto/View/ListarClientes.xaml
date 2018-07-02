@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="ListarClientes" Height="307" Width="489" Loaded="Window_Loaded">
+        Title="ListarClientes"  Height="463.5" Width="1008.5" Loaded="Window_Loaded">
     <Window.Background>
         <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
     </Window.Background>
@@ -15,7 +15,15 @@
             <ColumnDefinition Width="96*"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="dgCliente" HorizontalAlignment="Left" Margin="9,10,0,0" VerticalAlignment="Top" Height="249" Width="447" SelectionChanged="dgCliente_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False" Grid.ColumnSpan="2" />
+        <DataGrid x:Name="dgCliente" HorizontalAlignment="Left" Margin="260,94,0,0" VerticalAlignment="Top" Height="249" Width="448" SelectionChanged="dgCliente_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False" FontFamily="Verdana" AutoGenerateColumns="False"  IsReadOnly="True" RowDetailsVisibilityMode="Collapsed">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Path= Nome}" Width="100"/>
+                <DataGridTextColumn Header="CPF" Binding="{Binding Path= CPF}" Width="100"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Path= Email}" Width="100"/>
+                <DataGridTextColumn Header="Telefone" Binding="{Binding Path= Telefone}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="432,374,0,0" VerticalAlignment="Top" Width="74" Click="btnVoltar_Click"/>
 
 
     </Grid>

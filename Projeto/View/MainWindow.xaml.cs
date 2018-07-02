@@ -14,13 +14,9 @@ namespace View
         public MainWindow()
         {
             InitializeComponent();
-
-            
         }
         Anotacao anotacao = new Anotacao();
-        ControllerAnotacao controllerAnotacao = new ControllerAnotacao();
-
-        
+        ControllerAnotacao controllerAnotacao = new ControllerAnotacao();       
 
         private void btnEspacoCli(object sender, RoutedEventArgs e)
         {
@@ -40,7 +36,8 @@ namespace View
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
-        {           
+        {
+            dgAnotacao.Items.Refresh();
             dgAnotacao.ItemsSource = controllerAnotacao.ListAnotacoes();           
         }
 
@@ -73,11 +70,10 @@ namespace View
             catch (Exception ex)
             {
 
-                MessageBox.Show("Erro ao excluir funcionario (" + ex.Message + ")");
+                MessageBox.Show("Erro ao excluir(" + ex.Message + ")");
             }
 
         }
-
         
     }
 }

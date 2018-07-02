@@ -9,11 +9,11 @@
     <Window.Background>
         <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
     </Window.Background>
-    <Grid>
+    <Grid Margin="-2,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="26*" />
-            <ColumnDefinition Width="237*"/>
-            <ColumnDefinition Width="616*" />
+            <ColumnDefinition Width="214*"/>
+            <ColumnDefinition Width="639*" />
             <ColumnDefinition Width="121*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -22,13 +22,13 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Button x:Name="btnSalvar" Content="Salvar" Grid.Column="2" HorizontalAlignment="Left" Margin="64,214,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Click="btnSalvar_Click" RenderTransformOrigin="0.407,9.853" Height="20"/>
-        <TextBlock x:Name="textBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="16" Width="33"/>
+        <TextBlock x:Name="textBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="2,9,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="16" Width="57" FontFamily="Verdana" FontSize="14"/>
         <TextBox x:Name="txtNome" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="64,9,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
-        <TextBlock x:Name="txtBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="1" TextWrapping="Wrap" Text="CPF" VerticalAlignment="Top" Height="21" Width="33"/>
+        <TextBlock x:Name="txtBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="5,49,0,0" Grid.Row="1" TextWrapping="Wrap" Text="CPF" VerticalAlignment="Top" Height="21" Width="33" FontFamily="Verdana" FontSize="14" RenderTransformOrigin="-1.473,0.437"/>
         <TextBox x:Name="txtCPF" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="64,47,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,92,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" Height="16" Width="44"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="0,85,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" Height="23" Width="64" FontFamily="Verdana" FontSize="14"/>
         <TextBox x:Name="txtTelefone" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="64,85,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,128,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Height="16" Width="28"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="0,127,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Height="23" Width="38" FontFamily="Verdana" FontSize="14" RenderTransformOrigin="1.034,0.465" Foreground="#FF191414"/>
         <TextBox x:Name="txtEmail" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="64,127,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
         <Button x:Name="btnVoltar" Content="Voltar" Grid.Column="2" HorizontalAlignment="Left" Margin="225,212,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="22" Click="btnVoltar_Click"/>
 

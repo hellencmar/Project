@@ -7,22 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="463.5" Width="1008.5" Loaded="Window_Loaded">
     <Window.Background>
-        <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
+        <ImageBrush ImageSource="Imagem/pg.jpg"/>
     </Window.Background>
     <Grid RenderTransformOrigin="0.438,0.548" Margin="0,0,2,9">
-        <Button x:Name="EspacoCli" Content="Espaço Cliente" HorizontalAlignment="Left" Margin="50,93,0,0" VerticalAlignment="Top" Width="147" Click="btnEspacoCli" Height="67"/>
-        <Button x:Name="EspacoFun" Content="Espaço Funcionario" HorizontalAlignment="Left" Margin="50,265,0,0" VerticalAlignment="Top" Width="147" Click="btnEspacoFun" Height="67"/>
+        <Button x:Name="EspacoCli" Content="Espaço Cliente" HorizontalAlignment="Left" Margin="50,93,0,0" VerticalAlignment="Top" Width="147" Click="btnEspacoCli" Height="67" Background="#FFD8D2D2" BorderBrush="#FF130F0F"/>
+        <Button x:Name="EspacoFun" Content="Espaço Funcionario" HorizontalAlignment="Left" Margin="50,265,0,0" VerticalAlignment="Top" Width="147" Click="btnEspacoFun" Height="67" Background="#FFCFC9C9" BorderBrush="Black"/>
         <Button x:Name="EspacoAnot" Content="Fazer Anotações" HorizontalAlignment="Left" Margin="837,15,0,0" VerticalAlignment="Top" Width="98" Click="btnAnotacao"/>
-        <DataGrid x:Name="dgAnotacao" HorizontalAlignment="Left" Height="136" Margin="645,40,0,0" VerticalAlignment="Top" Width="290" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" MouseDoubleClick="dgAnotacao_MouseDoubleClick">
+        <DataGrid x:Name="dgAnotacao" HorizontalAlignment="Left" Height="136" Margin="645,40,0,0" VerticalAlignment="Top" Width="290" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" MouseDoubleClick="dgAnotacao_MouseDoubleClick" BorderBrush="Black" Background="#FFE0E0E0" Foreground="Black" FontSize="14" FontFamily="Verdana">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Lembrete" Binding="{Binding Path= Assunto}" Width="300"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBlock x:Name="Titulo" HorizontalAlignment="Left" Margin="649,181,0,0" TextWrapping="Wrap" Text="Assunto" VerticalAlignment="Top" Height="22" Width="124" FontSize="16"/>
-        <TextBox x:Name="txtAssunto" HorizontalAlignment="Left" Height="23" Margin="649,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
-        <TextBlock HorizontalAlignment="Left" Margin="649,248,0,0" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="txtDescricao" HorizontalAlignment="Left" Height="106" Margin="649,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
-        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="649,394,0,0" VerticalAlignment="Top" Width="75" Click="BtnExcluir" IsEnabled="False"/>
+        <TextBlock x:Name="Titulo" HorizontalAlignment="Left" Margin="698,181,0,0" TextWrapping="Wrap" Text="Assunto" VerticalAlignment="Top" Height="22" Width="124" FontSize="16"/>
+        <TextBox x:Name="txtAssunto" HorizontalAlignment="Left" Height="23" Margin="698,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Background="#FFE4E2E2" BorderBrush="#FF181919" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="702,248,0,0" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtDescricao" HorizontalAlignment="Left" Height="106" Margin="698,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" Background="#FFE2E2E2" BorderBrush="Black" IsReadOnlyCaretVisible="True" IsEnabled="False"/>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="702,394,0,0" VerticalAlignment="Top" Width="75" Click="BtnExcluir" IsEnabled="False" BorderBrush="Black"/>
 
 
 

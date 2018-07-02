@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="ClienteMenu" Height="450" Width="800">
+        Title="ClienteMenu" Height="463.5" Width="1008.5">
     <Window.Background>
         <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
     </Window.Background>
     <Grid>
 
-        <Button x:Name="CadastrarCli" Content="Cadastrar Cliente" HorizontalAlignment="Left" Margin="170,84,0,0" VerticalAlignment="Top" Width="118" Click="btnCadastrarCliente_Click" RenderTransformOrigin="0.381,0.879"/>
-        <Button x:Name="ListarCli" Content="Listar Clientes" HorizontalAlignment="Left" Margin="170,109,0,0" VerticalAlignment="Top" Width="119" FontFamily="Segoe UI Historic" Click="btnListarCliente_Click"/>
-        <Button x:Name="GerenciarCli" Content="Gerenciar Clientes" HorizontalAlignment="Left" Margin="170,134,0,0" VerticalAlignment="Top" Width="119" Click="btnGerenciarCli_Click"/>        
+        <Button x:Name="CadastrarCli" Content="Cadastrar Cliente" HorizontalAlignment="Left" Margin="401,72,0,0" VerticalAlignment="Top" Width="127" Click="btnCadastrarCliente_Click" RenderTransformOrigin="0.381,0.879" Height="57" FontFamily="Verdana"/>
+        <Button x:Name="ListarCli" Content="Listar Clientes" HorizontalAlignment="Left" Margin="401,158,0,0" VerticalAlignment="Top" Width="127" FontFamily="Verdana" Click="btnListarCliente_Click" Height="58"/>
+        <Button x:Name="GerenciarCli" Content="Gerenciar Clientes" HorizontalAlignment="Left" Margin="401,250,0,0" VerticalAlignment="Top" Width="127" Click="btnGerenciarCli_Click" Height="58" FontFamily="Verdana"/>
         <Grid Height="409" VerticalAlignment="Top" Margin="10,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="72*"/>
@@ -23,7 +23,8 @@
                 <ColumnDefinition Width="139*"/>
                 <ColumnDefinition Width="653*"/>
             </Grid.ColumnDefinitions>
-            
+            <Button x:Name="btnVoltar" Content="Voltar" Grid.Column="1" HorizontalAlignment="Left" Margin="220,273,0,0" Grid.Row="1" VerticalAlignment="Top" Width="128" Height="54" Click="btnVoltar_Click"/>
+
 
         </Grid>
 

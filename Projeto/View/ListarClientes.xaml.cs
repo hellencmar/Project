@@ -37,5 +37,10 @@ namespace View
 
           Cliente cli = (Cliente)dg.Items[dg.SelectedIndex];
         }
+
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

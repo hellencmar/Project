@@ -5,15 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="ListarFuncionarioPorFuncao" Height="314.286" Width="580.672">
+        Title="ListarFuncionarioPorFuncao" Height="463.5" Width="1008.5">
     <Window.Background>
         <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
     </Window.Background>
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="28,10,0,0" TextWrapping="Wrap" Text="Informe a função que deseja: " VerticalAlignment="Top" Width="159"/>
-        <TextBox x:Name="txtFuncao" HorizontalAlignment="Left" Height="17" Margin="192,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
-        <DataGrid x:Name="dgFuncionarios" HorizontalAlignment="Left" Margin="49,51,0,0" VerticalAlignment="Top" Height="194" Width="449"/>
-        <Button x:Name="Procurar" Content="Buscar" HorizontalAlignment="Left" Margin="320,9,0,0" VerticalAlignment="Top" Width="57" Height="17" Click="btnBuscarFuncao"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="222,52,0,0" TextWrapping="Wrap" Text="Informe a função desejada: " VerticalAlignment="Top" Width="205" FontFamily="Verdana"/>
+        <TextBox x:Name="txtFuncao" HorizontalAlignment="Left" Height="17" Margin="400,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
+        <DataGrid x:Name="dgFuncionarios" HorizontalAlignment="Left" Margin="237,106,0,0" VerticalAlignment="Top" Height="194" Width="448" FontFamily="Verdana" AutoGenerateColumns="False"  IsReadOnly="True" RowDetailsVisibilityMode="Collapsed">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Path= Nome}" Width="150"/>
+                <DataGridTextColumn Header="Funcao" Binding="{Binding Path= Funcao}" Width="150"/>                
+                <DataGridTextColumn Header="Telefone" Binding="{Binding Path= Telefone}" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Procurar" Content="Buscar" HorizontalAlignment="Left" Margin="654,49,0,0" VerticalAlignment="Top" Width="58" Height="17" Click="btnBuscarFuncao"/>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="400,330,0,0" VerticalAlignment="Top" Width="75" Click="btnVoltar_Click"/>
 
     </Grid>
 </Window>

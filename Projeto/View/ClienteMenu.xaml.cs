@@ -42,6 +42,9 @@ namespace View
 
         }
 
-  
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

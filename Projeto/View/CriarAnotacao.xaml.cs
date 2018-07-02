@@ -47,6 +47,7 @@ namespace View
                 controllerAnotacao.CadastrarAnotacao(anotacao);
 
                 MessageBox.Show("Anotação salva com sucesso");
+              
                 this.Close();
 
             }
