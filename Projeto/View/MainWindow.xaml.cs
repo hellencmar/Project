@@ -48,6 +48,8 @@ namespace View
         {
             if (dgAnotacao.SelectedIndex >= 0)
             {
+               
+                btnExcluir.IsEnabled = true;               
                 anotacao = (Anotacao)dgAnotacao.SelectedItem;
                 txtAssunto.Text = anotacao.Assunto;
                 txtDescricao.Text = anotacao.Descricao;                
@@ -76,6 +78,6 @@ namespace View
 
         }
 
-       
+        
     }
 }

@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="ListarFuncionarioPorFuncao" Height="314.286" Width="580.672">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
+    </Window.Background>
     <Grid>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="28,10,0,0" TextWrapping="Wrap" Text="Informe a função que deseja: " VerticalAlignment="Top" Width="159"/>
         <TextBox x:Name="txtFuncao" HorizontalAlignment="Left" Height="17" Margin="192,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>

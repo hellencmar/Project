@@ -47,5 +47,11 @@ namespace View
                 MessageBox.Show("Erro ao salvar Cliente (" + ex.Message + ")");
             }
         }
+
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="FuncionarioMenu" Height="292.105" Width="506.391">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
+    </Window.Background>
     <Grid>
         <Button x:Name="CadastrarFuncionario" Content="Cadastrar Funcionario" HorizontalAlignment="Left" Margin="58,55,0,0" VerticalAlignment="Top" Width="148" Click="btnCadastrarFunc"/>
         <Button x:Name="ListarTodosFuncionarios" Content="Listar Todos Funcionarios" HorizontalAlignment="Left" Margin="58,80,0,0" VerticalAlignment="Top" Width="148" Click="btnListarFuncionarios"/>

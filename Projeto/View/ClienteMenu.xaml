@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="ClienteMenu" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
+    </Window.Background>
     <Grid>
 
         <Button x:Name="CadastrarCli" Content="Cadastrar Cliente" HorizontalAlignment="Left" Margin="170,84,0,0" VerticalAlignment="Top" Width="118" Click="btnCadastrarCliente_Click" RenderTransformOrigin="0.381,0.879"/>

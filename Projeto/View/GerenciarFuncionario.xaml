@@ -5,20 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="GerenciarFuncionario" Height="436.975" Width="657.983" Loaded="Window_Loaded">
-    <Grid Margin="0,0,30,30">
-        <TextBlock HorizontalAlignment="Left" Margin="5,10,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" RenderTransformOrigin="-0.425,0.281"/>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="79,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="16" Width="33"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="79,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" Text="Função" VerticalAlignment="Top" Height="21" Width="44"/>
-        <TextBox x:Name="txtFuncao" HorizontalAlignment="Left" Height="22" Margin="79,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" RenderTransformOrigin="0.625,3.633"/>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="79,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-       
-        <DataGrid x:Name="dgDadosFuncionario" HorizontalAlignment="Left" Margin="185,208,0,0" VerticalAlignment="Top" Height="188" Width="361" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosFuncionario_MouseDoubleClick" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" />
-        <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="22,166,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btn_Editar"/>
-        <Button x:Name="btnExcluir" Content="Excluir Funcionario" HorizontalAlignment="Left" Margin="144,166,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btn_Excluir"/>
+        Title="GerenciarFuncionario" Height="463.5" Width="1008.5" Loaded="Window_Loaded">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid Margin="25,10,30,30">
+        <TextBlock HorizontalAlignment="Left" Margin="38,46,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" RenderTransformOrigin="-0.425,0.281"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="133,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" IsEnabled="False" RenderTransformOrigin="0.491,-0.376"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="38,97,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Height="16" Width="33"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="133,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="38,157,0,0" TextWrapping="Wrap" Text="Função" VerticalAlignment="Top" Height="21" Width="44" RenderTransformOrigin="1.474,7.836"/>
+        <TextBox x:Name="txtFuncao" HorizontalAlignment="Left" Height="22" Margin="133,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBlock HorizontalAlignment="Left" Margin="38,225,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" RenderTransformOrigin="0.625,3.633"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="133,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+
+        <DataGrid x:Name="dgDadosFuncionario" HorizontalAlignment="Left" Margin="489,53,0,0" VerticalAlignment="Top" Height="188" Width="361" CanUserAddRows="False" CanUserDeleteRows="False" MouseDoubleClick="dgDadosFuncionario_MouseDoubleClick" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" />
+        <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="79,314,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btn_Editar"/>
+        <Button x:Name="btnExcluir" Content="Excluir Funcionario" HorizontalAlignment="Left" Margin="239,314,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btn_Excluir"/>
 
     </Grid>
 </Window>

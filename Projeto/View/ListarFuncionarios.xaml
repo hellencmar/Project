@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="ListarFuncionarios" Height="314.286" Width="580.672" Loaded="Window_Loaded">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
+    </Window.Background>
     <Grid>
         <DataGrid x:Name="dgFuncionarios" HorizontalAlignment="Left" Margin="133,32,0,0" VerticalAlignment="Top" Height="205" Width="256" SelectionChanged="dgFuncionarios_SelectionChanged"/>
 

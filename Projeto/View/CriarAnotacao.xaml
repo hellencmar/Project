@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="CriarAnotacao" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
+    </Window.Background>
     <Grid>
         <Grid HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
             <Grid.RowDefinitions>

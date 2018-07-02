@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="CadastroFuncionario" Height="300" Width="300">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagem/pg.jpg"></ImageBrush>
+    </Window.Background>
     <Grid>
         <TextBlock x:Name="Nome" HorizontalAlignment="Left" Margin="20,22,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="80,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
