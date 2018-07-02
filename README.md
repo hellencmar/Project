@@ -4,7 +4,7 @@
 
 <b>Descrição</b>
 
-Neste projeto será desenvolvido um software para gerenciar funcionarios e clientes.
+Neste projeto será desenvolvido um software para gerenciar funcionarios e clientes de um salão.
 
 <b>Funcionalidades</b>
 
