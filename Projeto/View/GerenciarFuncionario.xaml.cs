@@ -68,8 +68,7 @@ namespace View
                 funcionario = controllerFuncionario.BuscarFuncionarioPorID(Convert.ToInt32(txtID.Text));
                 if (funcionario != null)
                     controllerFuncionario.Excluir((Convert.ToInt32(txtID.Text)));
-                MessageBox.Show("Funcionario excluido com sucesso!");
-                dgDadosFuncionario.Items.Refresh();
+                MessageBox.Show("Funcionario excluido com sucesso!");             
 
             }
             catch (Exception ex)

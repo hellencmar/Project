@@ -1,5 +1,6 @@
 ﻿using Controllers;
 using Models;
+using System;
 using System.Data;
 using System.Windows;
 
@@ -13,9 +14,13 @@ namespace View
         public MainWindow()
         {
             InitializeComponent();
+
             
         }
         Anotacao anotacao = new Anotacao();
+        ControllerAnotacao controllerAnotacao = new ControllerAnotacao();
+
+        
 
         private void btnEspacoCli(object sender, RoutedEventArgs e)
         {
@@ -35,24 +40,42 @@ namespace View
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-            ControllerAnotacao controlleAnotação = new ControllerAnotacao();
-            dgAnotacao.ItemsSource = controlleAnotação.ListAnotacoes();           
+        {           
+            dgAnotacao.ItemsSource = controllerAnotacao.ListAnotacoes();           
         }
 
         private void dgAnotacao_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (dgAnotacao.SelectedIndex >= 0)
             {
-
-                //var rowView = dgAnotacao.SelectedItems[0] as DataRowView;
-                //string ID = rowView["AnotacaoID"].ToString(); //textbox idMarca
-                //CriarAnotacao criarAnotacao = new CriarAnotacao();
-                //criarAnotacao.ShowDialog(ID);
-
+                anotacao = (Anotacao)dgAnotacao.SelectedItem;
+                txtAssunto.Text = anotacao.Assunto;
+                txtDescricao.Text = anotacao.Descricao;                
             }
            
         }
+
+        private void BtnExcluir(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                anotacao = (Anotacao)dgAnotacao.SelectedItem;
+                Anotacao anotacaoid = controllerAnotacao.BuscarAnotacaoPorID(anotacao.AnotacaoID);
+                if (anotacao != null)
+                    controllerAnotacao.Excluir(anotacao.AnotacaoID);
+                MessageBox.Show("Anotação excluida");     
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao excluir funcionario (" + ex.Message + ")");
+            }
+
+        }
+
+       
     }
 }

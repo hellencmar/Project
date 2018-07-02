@@ -10,25 +10,24 @@ namespace Controllers
         Contexto contexto = new Contexto();
         public void CadastrarAnotacao(Anotacao entity)
         {
-            contexto.AnotacoesCont.Add(entity);
+            contexto.Anotacoes.Add(entity);
             contexto.SaveChanges();
         }
-        public void AlterarAnotacao(Anotacao entity)
+        public Anotacao BuscarAnotacaoPorID(int id)
         {
-            contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;
-            contexto.SaveChanges();
+            return contexto.Anotacoes.Find(id);
         }
         public List<Anotacao> ListAnotacoes()
         {
-            return contexto.AnotacoesCont.ToList();
+            return contexto.Anotacoes.ToList();
         }
         public void Excluir(int id)
         {
-            Anotacao a = contexto.AnotacoesCont.Find(id);
+            Anotacao a = contexto.Anotacoes.Find(id);
 
             if (a != null)
             {
-                contexto.AnotacoesCont.Remove(a);
+                contexto.Anotacoes.Remove(a);
                 contexto.SaveChanges();
             }
         }

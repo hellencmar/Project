@@ -9,13 +9,17 @@
     <Grid RenderTransformOrigin="0.438,0.548">
         <Button x:Name="EspacoCli" Content="Espaço Cliente" HorizontalAlignment="Left" Margin="50,82,0,0" VerticalAlignment="Top" Width="147" Click="btnEspacoCli"/>
         <Button x:Name="EspacoFun" Content="Espaço Funcionario" HorizontalAlignment="Left" Margin="50,265,0,0" VerticalAlignment="Top" Width="147" Click="btnEspacoFun"/>
-        <Button x:Name="EspacoAnot" Content="Fazer Anotações" HorizontalAlignment="Left" Margin="362,265,0,0" VerticalAlignment="Top" Width="147" Click="btnAnotacao"/>
-        <DataGrid x:Name="dgAnotacao" HorizontalAlignment="Left" Height="208" Margin="362,52,0,0" VerticalAlignment="Top" Width="304" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" MouseDoubleClick="dgAnotacao_MouseDoubleClick">
+        <Button x:Name="EspacoAnot" Content="Fazer Anotações" HorizontalAlignment="Left" Margin="652,10,0,0" VerticalAlignment="Top" Width="98" Click="btnAnotacao"/>
+        <DataGrid x:Name="dgAnotacao" HorizontalAlignment="Left" Height="137" Margin="460,38,0,0" VerticalAlignment="Top" Width="290" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Loaded="Window_Loaded" IsReadOnly="True" RowDetailsVisibilityMode="Collapsed" MouseDoubleClick="dgAnotacao_MouseDoubleClick">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Path= AnotacaoID}" Width="50"/>
-                <DataGridTextColumn Header="Assunto" Binding="{Binding Path= Assunto}" Width="200"/>
+                <DataGridTextColumn Header="Lembrete" Binding="{Binding Path= Assunto}" Width="300"/>
             </DataGrid.Columns>
         </DataGrid>
+        <TextBlock x:Name="Titulo" HorizontalAlignment="Left" Margin="460,180,0,0" TextWrapping="Wrap" Text="Assunto" VerticalAlignment="Top" Height="22" Width="124" FontSize="16"/>
+        <TextBox x:Name="txtAssunto" HorizontalAlignment="Left" Height="23" Margin="460,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,235,0,0" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtDescricao" HorizontalAlignment="Left" Height="106" Margin="460,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="460,376,0,0" VerticalAlignment="Top" Width="75" Click="BtnExcluir"/>
 
 
 
